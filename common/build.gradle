@@ -18,5 +18,5 @@ processResources
 	from("../LICENSE.md")
 
 	//expand root project properties to potential mixin files
-	filesMatching(["*.json"]) { expand(properties: parent.properties) }
+	filesMatching(["*.json", "*.mcmeta"]) { expand(properties: parent.properties) }
 }
